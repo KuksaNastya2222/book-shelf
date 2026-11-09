@@ -20,4 +20,4 @@ jobs:
         run: pip install flet
 
       - name: Build APK
-        run: flet build apk
+        run: yes | flet build apk
