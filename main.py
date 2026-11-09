@@ -6,8 +6,8 @@ from supabase import create_client
 # Загружаем ключи из файла .env
 load_dotenv()
 
-SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+SUPABASE_URL = "https://qogokewwzovejmcvgzac.supabase.co"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFvZ29rZXd3em92ZWptY3ZnemFjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQxMzEyMzksImV4cCI6MjEwOTcwNzIzOX0.jJzwtadFb1v7mRQNtURyG0SMLfesAZ7_5MXy-IOsV_Q"
 
 # Подключаемся к Supabase
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
