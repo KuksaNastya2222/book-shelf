@@ -1,0 +1,13 @@
+[project]
+name = "book_shelf"
+version = "1.0.0"
+description = "Моя книжная полка"
+requires-python = ">=3.9"
+dependencies = [
+    "flet",
+    "supabase",
+    "python-dotenv"
+]
+
+[tool.flet.app]
+path = "."
