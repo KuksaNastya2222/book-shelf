@@ -27,3 +27,6 @@ jobs:
         with:
           name: app-release
           path: "**/*.apk"
+          
+      - name: List all files (Debug)
+        run: find . -type f | grep -v ".git/"
