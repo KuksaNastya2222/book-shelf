@@ -37,7 +37,7 @@ def main(page: ft.Page):
                             on_change=lambda e, book_id=book['id']: toggle_read(book_id, e.control.value)
                         ),
                         ft.IconButton(
-                            icon=ft.Icons.DELETE_OUTLINE, 
+                            icon=ft.Icons.DELETE, 
                             icon_color="red",
                             on_click=lambda e, book_id=book['id']: delete_book(book_id)
                         )
@@ -45,7 +45,7 @@ def main(page: ft.Page):
                     padding=15,
                     bgcolor=ft.Colors.WHITE,
                     border_radius=10,
-                    shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.BLACK12)
+                    shadow=ft.BoxShadow(blur_radius=5, color=ft.Colors.BLACK_12)
                 )
                 books_list.controls.append(book_card)
         except Exception as e:
