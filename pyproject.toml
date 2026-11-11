@@ -11,3 +11,5 @@ dependencies = [
 
 [tool.flet.app]
 path = "."
+[tool.flet.android]
+min_sdk_version = 23
